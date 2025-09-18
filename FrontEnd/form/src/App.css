@@ -1,0 +1,226 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.791);
+}
+.child_container {
+  width: 80%;
+  height: 90%;
+  border: 1px solid wheat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  display: flex;
+  border-radius: 10px;
+  background: black;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  /* border: 2px solid green; */
+}
+/* Center the form */
+.form {
+  width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-left: 10%;
+  /* border: 2px solid red; */
+}
+
+/* Label styling */
+.label {
+  font-size: 14px;
+  color: wheat;
+  margin-bottom: 6px;
+  display: block;
+  letter-spacing: 1px;
+}
+
+/* Input styling */
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid wheat;
+  background: black;
+  color: white;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+}
+
+/* Focus effect */
+.input:focus {
+  border-color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Hover effect */
+.input:hover {
+  border-color: #f5deb3;
+  box-shadow: 0 0 8px rgba(245, 222, 179, 0.6);
+}
+.submit {
+  width: 120px;
+  height: 30px;
+  border-radius: 15px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: wheat;
+  border: 1px solid wheat;
+}
+.submit:hover {
+  box-shadow: 0 0 8px rgba(245, 222, 179, 0.6);
+  cursor: pointer;
+}
+#gender {
+  border: 1px solid wheat;
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  cursor: pointer;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+#gender:hover {
+  box-shadow: 0 0 8px rgba(245, 222, 179, 0.6);
+  cursor: pointer;
+}
+.option {
+  background: black;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(245, 222, 179, 0.6);
+  cursor: pointer;
+}
+ .logo .img{
+font-size: 350px;
+color: #f5deb3;
+ position: absolute;
+  bottom:20%;
+  left: 9%;
+  color: aquamarine;
+}
+
+.error_handling{
+  color: red;
+}
+
+.loding{
+  color: rgb(45, 246, 10);
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+errormassage{
+   color: red;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.logo{
+  width: 55%;
+  justify-content: left;
+    display: flex;
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+h2{
+  position: absolute;
+  color: wheat;
+  top: 15%;
+  left: 16%;
+  color: azure;
+}
+
+
+
+/* 📱 For tablets (max width 1024px) */
+@media (max-width: 1024px) {
+  .child_container {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .form {
+    margin: 20px auto;
+    width: 80%;
+    float: none;
+  }
+
+  .img {
+    display: none;
+  }
+  h2{
+   display: none; 
+  }
+}
+
+
+/* 📱 For mobile devices (max width 768px) */
+@media (max-width: 768px) {
+
+  .child_container {
+    width: 95%;
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+
+  .form {
+    width: 100%;
+    margin: 10px auto;
+    padding: 15px;
+  }
+
+  .img {
+    display: none;
+  }
+}
+
+/* 📱 For very small phones (max width 480px) */
+@media (max-width: 480px) {
+  .form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .input,
+  #gender {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .submit {
+    width: 100px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .img {
+    font-size: 120px;
+    margin-top: 10px;
+  }
+}
